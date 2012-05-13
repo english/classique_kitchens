@@ -4,7 +4,6 @@ gem 'rails', '3.2.3'
 
 gem 'jquery-rails'
 gem 'paperclip',  '~> 3.0.3'
-gem 'aws-s3'
 gem 'haml-rails', '~> 0.3.4'
 gem 'rdiscount'
 gem 'simple_form'
@@ -29,4 +28,5 @@ end
 
 group :production do
   gem 'pg'
+  gem 'aws-sdk'
 end
