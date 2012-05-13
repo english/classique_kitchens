@@ -5,7 +5,6 @@ class Kitchen < ActiveRecord::Base
 
   has_attached_file :image, {
     styles: { featured: '940x529#' },
-    url: '/system/kitchens/:attachment/:id/:style/:filename'
   }.merge(PAPERCLIP_STORAGE_OPTIONS)
 
   validates_attachment_presence :image
