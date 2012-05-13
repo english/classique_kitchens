@@ -1,14 +1,7 @@
-%ul.slideshow
-  - @slides.each do |slide|
-    %li.slide
-      = image_tag slide.image.url(:featured), alt: slide.name
-
-%section.blurb
-  :markdown
-    Classique Kitchens offer infinite scope for kitchen design and layout,
-    whether you own a mansion or space is at a premium we think that you'll
-    find your ideal kitchen within our website.
-
-    There are a wide range of units and accessories with something to suit all.
-    Whether you require a new fully fitted kitchen, or want to modernize your
-    current one by simply adding new doors, handles, worktops etc.
+#featured-kitchens.carousel.carousel-fade
+  .carousel-inner
+    - @slides.each do |slide|
+      %div{class: slide.classes}
+        = image_tag slide.image.url(:featured), alt: slide.alt
+  .carousel-caption
+    = raw(@blurb)

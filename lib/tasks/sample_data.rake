@@ -5,12 +5,12 @@ task :sample_data => :environment do
   dir = File.expand_path('../../db/seed', File.dirname(__FILE__))
 
   Dir["#{dir}/stormer/*.jpg"].each do |image|
-    name = "Stormer " + File.basename(image).humanize.titleize
+    name = "Stormer " + File.basename(image, '.jpg').humanize.titleize
     StormerKitchen.create(name: name, image: File.new(image))
   end
 
   Dir["#{dir}/hand_made/*.jpg"].each do |image|
-    name = "Hand Made " + File.basename(image).humanize.titleize
+    name = "Hand Made " + File.basename(image, '.jpg').humanize.titleize
     HandMadeKitchen.create(name: name, image: File.new(image))
   end
 

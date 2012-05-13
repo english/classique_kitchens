@@ -8,9 +8,21 @@
   = csrf_meta_tags
 
 %body
-  %header.page-header
-    %hgroup.title
-      %h1 Classique Kitchens
-      %h2 Kitchens and Appliances Cumbria
+  .container
+    %header.page-header
+      .navbar
+        .navbar-inner
+          .container
+            %ul.nav
+              %li.active
+                %a{href: '#'} Home
+              %li
+                %a{href: '#'} Kitchens
+              %li
+                %a{href: '#'} Brands
 
-  = yield
+      %hgroup.title
+        %h1 Classique Kitchens
+        %h2 Kitchens and Appliances Cumbria
+
+    = yield
