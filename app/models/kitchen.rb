@@ -1,5 +1,5 @@
 class Kitchen < ActiveRecord::Base
-  attr_accessible :name, :image, :type
+  attr_accessible :name, :image, :type, :featured
   validates :name, :type, presence: true
   validates :name, uniqueness: true
 
@@ -24,9 +24,13 @@ class Kitchen < ActiveRecord::Base
   end
 
   def self.select_options
-    descendants.map{ |c| c.to_s }.sort
+    descendants.map{ |c| c.to_s.titleize }.sort
+  end
+
+  def type=(new_type)
+    @type = new_type.to_s.camelize.safe_constantize
   end
 end
 
-class StormerKitchen < Kitchen ; end
 class HandMadeKitchen < Kitchen ; end
+class StormerKitchen < Kitchen ; end
