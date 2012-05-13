@@ -15,15 +15,15 @@
           .container
             %ul.nav
               %li.active
-                %a{href: '#'} Home
+                = link_to 'Home', root_path
               %li
-                %a{href: '#'} Kitchens
+                = link_to 'Kitchens', kitchens_path
               %li
                 %a{href: '#'} Brands
 
       %hgroup.title
-        %h1 Classique Kitchens
-        %h2 Kitchens and Appliances Cumbria
+        %h1.company-name Classique Kitchens
+        %h2.subheading Kitchens and Appliances Cumbria
 
     - flash.each do |name, msg|
       %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
