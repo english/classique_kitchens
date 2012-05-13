@@ -7,7 +7,7 @@
     = f.input :name, value: @kitchen.name
     = f.input :featured, value: @kitchen.featured?
     = f.input :type, collection: Kitchen.select_options
-    = f.input :image, value: @kitchen.image.url
+    = f.input :image
 
     .form-actions
       = f.submit nil, :class => 'btn btn-primary'
