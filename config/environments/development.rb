@@ -34,4 +34,7 @@ ClassiqueKitchens::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Paperclip options to store images locally
+  PAPERCLIP_STORAGE_OPTIONS = {}
 end

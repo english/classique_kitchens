@@ -2,7 +2,10 @@ class Kitchen < ActiveRecord::Base
   attr_accessible :name, :image
   validates :name, presence: true, uniqueness: true
 
-  has_attached_file :image, styles: { featured: '940x529#' }
+  has_attached_file :image, {
+    styles: { featured: '940x529#' }
+  }.merge(PAPERCLIP_STORAGE_OPTIONS)
+
   validates_attachment_presence :image
 
   def self.featured
