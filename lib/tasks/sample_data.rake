@@ -14,7 +14,7 @@ task :sample_data => :environment do
     HandMadeKitchen.create!(name: name, image: File.new(image))
   end
 
-  StormerKitchen.first.update_attribute(featured: true)
-  StormerKitchen.last.update_attribute(featured: true)
-  HandmadeKitchen.last.update_attribute(featured: true)
+  StormerKitchen.first.update_attribute(:featured, true)
+  StormerKitchen.last.update_attribute(:featured, true)
+  HandmadeKitchen.last.update_attribute(:featured, true)
 end
