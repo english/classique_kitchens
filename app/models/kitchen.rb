@@ -24,11 +24,7 @@ class Kitchen < ActiveRecord::Base
   end
 
   def self.select_options
-    descendants.map{ |c| c.to_s.titleize }.sort
-  end
-
-  def type=(new_type)
-    @type = new_type.to_s.camelize.safe_constantize
+    descendants.map{ |c| c.to_s }.sort
   end
 end
 

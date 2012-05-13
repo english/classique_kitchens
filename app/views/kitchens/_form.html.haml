@@ -6,7 +6,7 @@
 
     = f.input :name, value: @kitchen.name
     = f.input :featured, value: @kitchen.featured?
-    = f.input :type, value: @kitchen.type.titleize, collection: Kitchen.select_options
+    = f.input :type, collection: Kitchen.select_options
     = f.input :image, value: @kitchen.image.url
 
     .form-actions
