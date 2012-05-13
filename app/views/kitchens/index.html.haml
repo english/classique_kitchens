@@ -4,12 +4,14 @@
   %thead
     %tr
       %th Name
+      %th Type
       %th Actions
 
   %tbody
     - @kitchens.each do |kitchen|
       %tr
         %td= link_to kitchen.name, kitchen
+        %td= kitchen.type.titleize
         %td
           = link_to 'Edit', edit_kitchen_path(kitchen), :class => 'btn btn-mini'
           = link_to 'Destroy', kitchen, method: :delete, confirm: 'Are you sure?', :class => 'btn btn-mini btn-danger'
