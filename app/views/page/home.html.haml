@@ -1,7 +1,7 @@
 %ul.slideshow
   - @slides.each do |slide|
     %li.slide
-      = image_tag slide.image.url, alt: slide.name
+      = image_tag slide.image.url(:featured), alt: slide.name
 
 %section.blurb
   :markdown
