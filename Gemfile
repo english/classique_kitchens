@@ -5,6 +5,7 @@ gem 'rails', '3.2.3'
 gem 'jquery-rails'
 gem 'paperclip',  '~> 3.0.3'
 gem 'haml-rails', '~> 0.3.4'
+gem 'rdiscount'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
