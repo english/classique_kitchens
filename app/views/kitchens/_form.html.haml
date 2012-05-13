@@ -1,0 +1,13 @@
+= simple_form_for(@kitchen, html: { :class => 'form-horizontal' }) do |f|
+  %fieldset
+    %legend
+      = controller.action_name.capitalize
+      Kitchen
+
+    = f.input :name, value: @kitchen.name
+    = f.input :type, collection: Kitchen.select_options, value: @kitchen.type
+    = f.input :image, value: @kitchen.image.url
+
+    .form-actions
+      = f.submit nil, :class => 'btn btn-primary'
+      = link_to 'Cancel', @kitchen, :class => 'btn'

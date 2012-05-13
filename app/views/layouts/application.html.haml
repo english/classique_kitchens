@@ -25,4 +25,9 @@
         %h1 Classique Kitchens
         %h2 Kitchens and Appliances Cumbria
 
+    - flash.each do |name, msg|
+      %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
+        %a.close(data-dismiss='alert') x
+        = msg
+
     = yield
