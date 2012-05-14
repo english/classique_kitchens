@@ -19,7 +19,7 @@ Then /^I should see the company name and tagline in the header$/ do
 end
 
 Then /^I should see a slideshow of featured kitchens$/ do
-  within 'body .slideshow' do
+  within 'body .featured-kitchens' do
     @slides.each do |slide|
       page.should have_css "img[alt='#{slide.name}']"
       page.should have_css "img[src='#{slide.image.url}']"
@@ -33,8 +33,14 @@ Then /^I should see the following blurb about the company:$/ do |blurb|
   end
 end
 
-Then /^I should see the company phone number:$/ do |phone_number|
+Then /^I should see the company phone number in the header:$/ do |phone_number|
   within 'header' do
     page.should(have_content(phone_number))
+  end
+end
+
+Then /^I should see the company address in the header:$/ do |address|
+  within 'header' do
+    page.should(have_content(address))
   end
 end

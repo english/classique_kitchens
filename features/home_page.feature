@@ -8,9 +8,13 @@ Feature: Home Page
 
     When I go to the home page
     Then I should see the company name and tagline in the header
-    And I should see the company phone number:
+    And I should see the company phone number in the header:
     """
     01228 12345
+    """
+    And I should see the company address in the header:
+    """
+    123 Street, Carlisle, CA1 2AB
     """
     And I should see the following blurb about the company:
     """
