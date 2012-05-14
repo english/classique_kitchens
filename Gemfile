@@ -15,15 +15,19 @@ group :assets do
   gem 'bootstrap-sass'
 end
 
-group :test do
+group :test, :development do
   gem 'factory_girl_rails', '~> 3.3.0'
   gem 'cucumber-rails',     '~> 1.3.0', require: false
   gem 'database_cleaner'
-end
 
-group :test, :development do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 2.10.1'
+
+  gem 'guard-rails'
+  gem 'guard-spork'
+  gem 'guard-cucumber'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
 end
 
 group :production do

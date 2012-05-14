@@ -1,6 +1,6 @@
 class Kitchen < ActiveRecord::Base
   attr_accessible :name, :image, :type, :featured
-  validates :name, :type, presence: true
+  validates :name, presence: true
   validates :name, uniqueness: true
 
   has_attached_file :image, {
@@ -28,6 +28,3 @@ class Kitchen < ActiveRecord::Base
     descendants.map{ |c| c.to_s }.sort
   end
 end
-
-class HandMadeKitchen < Kitchen ; end
-class StormerKitchen < Kitchen ; end

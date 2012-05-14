@@ -1,0 +1,1 @@
+class HandMadeKitchen < Kitchen ; end
