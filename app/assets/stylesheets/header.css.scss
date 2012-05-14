@@ -1,5 +1,18 @@
-.title {
-  .company-name {
-    /*font: "Edwardian Script";*/
+.page-header {
+  .header-inner { @include makeRow; }
+
+  .title {
+    @include makeColumn(6);
+    .company-name {
+      @include replace-text-with-dimensions('logo.png', 0, 0);
+      margin-bottom: 6px;
+    }
+  }
+
+  .contact {
+    @include makeColumn(6);
+    text-align: right;
+
+    p { font-size: round($baseFontSize * 1.2); }
   }
 }

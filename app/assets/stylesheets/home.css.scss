@@ -10,5 +10,20 @@
   height: 529px;
 
   .kitchen { @extend .top-left; }
-  .blurb   { @extend .top-left; }
+
+  .blurb {
+    @extend .top-left;
+    background-color: #000;
+    @include opacity(0.75);
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    padding: 0 15px;
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin: 9px 0 0;
+    }
+  }
 }
