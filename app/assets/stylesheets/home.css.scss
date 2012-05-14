@@ -1,39 +1,14 @@
-.carousel-caption {
-  z-index: 10;
-  top: 0;
+.top-left {
+  position: absolute;
   left: 0;
-  width: 25%;
-
-  p {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
+  top: 0;
 }
 
-.carousel.carousel-fade {
-  .item {
-    -webkit-transition: opacity 2s ease-in-out;
-    -moz-transition: opacity 2s ease-in-out;
-    -ms-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
-    transition: opacity 2s ease-in-out;
-  }
+.featured-kitchens {
+  position: relative;
+  width: 940px;
+  height: 529px;
 
-  .active.left, .active.right {
-    left: 0;
-    z-index: 2;
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
-
-  .next, .prev {
-    left: 0;
-    z-index: 1;
-  }
-
-  .carousel-control {
-    z-index: 3;
-  }
+  .kitchen { @extend .top-left; }
+  .blurb   { @extend .top-left; }
 }
-
-

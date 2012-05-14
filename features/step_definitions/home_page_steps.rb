@@ -33,3 +33,8 @@ Then /^I should see the following blurb about the company:$/ do |blurb|
   end
 end
 
+Then /^I should see the company phone number:$/ do |phone_number|
+  within 'header' do
+    page.should(have_content(phone_number))
+  end
+end

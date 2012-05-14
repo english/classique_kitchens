@@ -1,7 +1,6 @@
-#featured-kitchens.carousel.carousel-fade
-  .carousel-inner
+.featured-kitchens
+  .kitchens
     - @slides.each do |slide|
-      %div{class: slide.classes}
-        = image_tag slide.image.url(:featured), alt: slide.alt
-  .carousel-caption
+      = image_tag slide.image.url(:featured), alt: slide.alt, :class => 'kitchen'
+  .blurb
     = raw(@blurb)
