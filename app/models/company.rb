@@ -2,7 +2,7 @@ module Company
   extend self
 
   def phone_number
-    '01228 12345'
+    '01228 525676'
   end
 
   def address

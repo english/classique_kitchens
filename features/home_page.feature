@@ -10,7 +10,7 @@ Feature: Home Page
     Then I should see the company name and tagline in the header
     And I should see the company phone number in the header:
     """
-    01228 12345
+    01228 525676
     """
     And I should see the company address in the header:
     """
