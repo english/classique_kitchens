@@ -1,9 +1,9 @@
 $(function() {
-  $('.featured-kitchens img:gt(0)').hide();
+  $('#featured img:gt(0)').hide();
 
   setInterval(function() {
-    $('.featured-kitchens .kitchens :first-child').fadeOut()
-      .next('img').fadeIn()
-      .end().appendTo('.featured-kitchens .kitchens');
-  }, 3000);
+    $('#featured .kitchens :first-child').fadeOut('slow')
+      .next('img').fadeIn('slow')
+      .end().appendTo('#featured .kitchens');
+  }, 5000);
 });
