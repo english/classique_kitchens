@@ -27,4 +27,9 @@ class Kitchen < ActiveRecord::Base
   def self.select_options
     descendants.map{ |c| c.to_s }.sort
   end
+
+  # TODO: extract this into presenter/exhibit
+  def self.type
+    "Kitchen"
+  end
 end

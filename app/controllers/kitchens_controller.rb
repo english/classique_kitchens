@@ -6,7 +6,7 @@ class KitchensController < ApplicationController
             else Kitchen
             end
     @kitchens = klass.all
-    @type = klass.name.humanize
+    @type = klass.type.pluralize
   end
   attr_reader :kitchens, :type
   helper_method :kitchens
