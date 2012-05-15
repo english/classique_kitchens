@@ -15,7 +15,7 @@
         .navbar-inner
           .container
             %ul.nav
-              %li.active= link_to 'Home', root_path
+              %li= link_to 'Home', root_path
               %li.dropdown
                 %a(href="#" class="dropdown-toggle" data-toggle="dropdown")
                   Kitchens
@@ -26,9 +26,7 @@
                     %li= link_to 'Stormer Kitchens', kitchens_path(type: 'Stormer')
                     %li= link_to 'Hand Made Kitchens', kitchens_path(type: 'HandMade')
 
-              %li= link_to 'Brands', '#'
-
-            %p.navbar-text= phone_number
+              -#%li= link_to 'Brands', '#'
 
       .header-inner
         %hgroup.title
