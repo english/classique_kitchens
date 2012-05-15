@@ -1,3 +1,30 @@
-// Place all the styles related to the kitchen controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.kitchens-index {
+  .kitchens {
+    height: 315px;
+    position: relative;
+    margin-bottom: 2em;
+
+    .kitchen {
+      @extend .top-left;
+      width: 500px;
+      height: 315px;
+    }
+
+    .image {
+      @extend .top-left;
+      /*z-index: 1;*/
+      width: 500px;
+      height: 315px;
+    }
+
+    .actions {
+      z-index: 2;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+    }
+  }
+  .new-kitchen {
+    clear: both;
+  }
+}

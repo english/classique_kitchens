@@ -3,3 +3,10 @@
 @import "base";
 @import "header";
 @import "home";
+@import "kitchen";
+
+.content {
+  .title {
+    margin-bottom: 1em;
+  }
+}
