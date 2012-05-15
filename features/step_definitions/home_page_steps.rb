@@ -1,5 +1,6 @@
 def sample_image
-  File.new 'test/fixtures/sample_image.jpg'
+  path = File.expand_path('../../spec/fixtures/sample_image.jpg', File.dirname(__FILE__))
+  File.new(path)
 end
 
 Given /^Some featured kitchens$/ do
