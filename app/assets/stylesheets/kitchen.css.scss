@@ -1,8 +1,16 @@
 .kitchens-index {
+  @include makeRow;
+
+  .title {
+    @include makeColumn(12);
+    font-size: 4em;
+  }
+
   .kitchens {
     height: 315px;
     position: relative;
     margin-bottom: 2em;
+    @include makeColumn(7);
 
     .kitchen {
       @extend .top-left;
@@ -24,7 +32,17 @@
       right: 6px;
     }
   }
+
+  .description {
+    @include makeColumn(5);
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
   .new-kitchen {
+    @include makeColumn(12);
     clear: both;
   }
 }

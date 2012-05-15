@@ -10,5 +10,9 @@
 
         %img.image{src: kitchen.image.url, alt: kitchen.name}
 
+  .description
+    .well= raw(description)
+      
+
   .new-kitchen
     = link_to 'New Kitchen', new_kitchen_path, :class => 'btn btn-primary'

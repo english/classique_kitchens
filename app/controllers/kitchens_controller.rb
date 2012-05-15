@@ -7,10 +7,12 @@ class KitchensController < ApplicationController
             end
     @kitchens = klass.all
     @type = klass.type.pluralize
+    @description = klass.description
   end
-  attr_reader :kitchens, :type
+  attr_reader :kitchens, :type, :description
   helper_method :kitchens
   helper_method :type
+  helper_method :description
 
 
   def new
