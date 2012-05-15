@@ -1,19 +1,14 @@
-%h1 Kitchens
+.kitchens-index
+  %h1.title= type
 
-%table.table.table-striped
-  %thead
-    %tr
-      %th Name
-      %th Type
-      %th Actions
+  #slideshow.kitchens
+    - kitchens.each do |kitchen|
+      %div{:class => "kitchen #{kitchen.name.parameterize}"}
+        .actions
+          = link_to 'Edit', edit_kitchen_path(kitchen), :class => 'btn btn-mini' 
+          = link_to 'Delete', kitchen, :class => 'btn btn-mini btn-danger'
 
-  %tbody
-    - @kitchens.each do |kitchen|
-      %tr
-        %td= link_to kitchen.name, kitchen
-        %td= kitchen.type.titleize
-        %td
-          = link_to 'Edit', edit_kitchen_path(kitchen), :class => 'btn btn-mini'
-          = link_to 'Destroy', kitchen, method: :delete, confirm: 'Are you sure?', :class => 'btn btn-mini btn-danger'
+        %img.image{src: kitchen.image.url, alt: kitchen.name}
 
-= link_to 'New Kitchen', new_kitchen_path, :class => 'btn btn-primary'
+  .new-kitchen
+    = link_to 'New Kitchen', new_kitchen_path, :class => 'btn btn-primary'

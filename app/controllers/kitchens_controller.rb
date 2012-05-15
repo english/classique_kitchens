@@ -1,7 +1,17 @@
 class KitchensController < ApplicationController
   def index
-    @kitchens = Kitchen.all
+    klass = case params[:type]
+            when 'Stormer' then StormerKitchen
+            when 'HandMade' then HandMadeKitchen
+            else Kitchen
+            end
+    @kitchens = klass.all
+    @type = klass.name.humanize
   end
+  attr_reader :kitchens, :type
+  helper_method :kitchens
+  helper_method :type
+
 
   def new
     @kitchen = Kitchen.new

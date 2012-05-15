@@ -39,9 +39,10 @@
           %p.address= "Come see our new showroom at #{address}"
           %p.phone-number= "or call us on #{phone_number}."
 
-    - flash.each do |name, msg|
-      %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
-        %a.close(data-dismiss='alert') x
-        = msg
+    .content
+      - flash.each do |name, msg|
+        %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
+          %a.close(data-dismiss='alert') x
+          = msg
 
-    = yield
+      = yield
