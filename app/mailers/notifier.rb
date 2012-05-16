@@ -4,6 +4,6 @@ class Notifier < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail(subject: "New Contact Form Enquiry")
+    mail(subject: "New enquiry from #{message.name}")
   end
 end
