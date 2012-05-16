@@ -1,0 +1,12 @@
+= simple_form_for(@message, url: contact_path,
+  html: { method: :put, :class => 'form-horizontal contact-form' }) do |f|
+  %fieldset
+    %legend Contact Form
+
+    = f.input :name, placeholder: 'John Smith'
+    = f.input :email, placeholder: 'someone@example.com'
+    = f.input :content, placeholder: 'Your message here...', as: 'text',
+      label: 'Message', input_html: { rows: '10', cols: '10', :class => 'message' }
+
+    .form-actions
+      = f.submit 'Send message', :class => 'btn btn-primary'
