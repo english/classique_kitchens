@@ -1,7 +1,9 @@
+# encoding: utf-8
+
 class StormerKitchen < Kitchen
   # TODO: extract this into presenter/exhibit
   def self.type
-    "Störmer Kitchen"
+    'Störmer Kitchen'
   end
 
   def self.description
