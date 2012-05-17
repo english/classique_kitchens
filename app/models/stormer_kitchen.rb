@@ -1,7 +1,7 @@
 class StormerKitchen < Kitchen
   # TODO: extract this into presenter/exhibit
   def self.type
-    "St&#246;rmer Kitchen"
+    "Störmer Kitchen"
   end
 
   def self.description
