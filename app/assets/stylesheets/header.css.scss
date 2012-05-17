@@ -1,5 +1,11 @@
 .page-header {
-  .header-inner { @include makeRow; }
+  .header-inner {
+    @include makeRow;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 
   .title {
     @include makeColumn(6);
