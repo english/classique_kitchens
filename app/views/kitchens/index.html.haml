@@ -1,5 +1,6 @@
 .kitchens-index
-  %h1.title= raw(type)
+  .page-header
+    %h1= raw(type)
 
   #slideshow.kitchens
     - kitchens.each do |kitchen|
