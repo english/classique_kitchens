@@ -6,18 +6,18 @@ module Company
   end
 
   def address
-    "123 Street, Carlisle, CA1 2AB"
+    "Unit 2, Port Road Workshops, Carlisle, Cumbria, CA2 7AJ"
   end
 
   def blurb
     <<BLURB
-Classique Kitchens offer infinite scope for kitchen design and layout,
-whether you own a mansion or space is at a premium we think that you'll
-find your ideal kitchen within our website.
+Kitchens from Classique Kitchens are a reflection of human individuality,
+a sign of personal style. Whatever the kitchen means to you, routine,
+relaxation, hobby or profession.
 
-There are a wide range of units and accessories with something to suit all.
-Whether you require a new fully fitted kitchen, or want to modernize your
-current one by simply adding new doors, handles, worktops etc.
+We will work with you to create a totally unique kitchen acquired to your
+personal taste. We perceive each individual project as an invitation to push
+our creative design skills to the limit, above all with new thinking.
 BLURB
   end
 end

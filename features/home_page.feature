@@ -14,9 +14,9 @@ Feature: Home Page
     """
     And I should see the company address in the header:
     """
-    123 Street, Carlisle, CA1 2AB
+    Unit 2, Port Road Workshops, Carlisle, Cumbria, CA2 7AJ
     """
     And I should see the following blurb about the company:
     """
-    Classique Kitchens offer infinite scope for kitchen design and layout
+    Kitchens from Classique Kitchens are a reflection of
     """

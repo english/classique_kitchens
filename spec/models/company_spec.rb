@@ -2,6 +2,6 @@ require_relative '../../app/models/company'
 
 describe Company do
   its(:phone_number) { should == "01228 525676" }
-  its(:address) { should == "123 Street, Carlisle, CA1 2AB" }
-  its(:blurb) { should =~ /^Classique Kitchens offer infinite/ }
+  its(:address) { should == "Unit 2, Port Road Workshops, Carlisle, Cumbria, CA2 7AJ" }
+  its(:blurb) { should =~ /^Kitchens from Classique Kitchens are a reflection of/ }
 end
