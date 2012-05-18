@@ -15,7 +15,7 @@ end
 Then /^I should see the company name and tagline in the header$/ do
   within 'header' do
     page.should have_content 'Classique Kitchens'
-    page.should have_content 'Kitchens and Appliances Cumbria'
+    page.should have_content 'Personal - Individual - Inspirational'
   end
 end
 
