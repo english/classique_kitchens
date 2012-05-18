@@ -2,6 +2,7 @@ require 'ostruct'
 
 class PageController < ApplicationController
   def home
+    @active_nav_item = 'Home'
     @title = 'Classique Kitchens | Kitchens and Appliances Cumbria'
 
     @slides = Kitchen.featured.each_with_index.map { |kitchen, index|

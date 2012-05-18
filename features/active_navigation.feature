@@ -7,7 +7,14 @@ Feature: Active Menu Item
   Background:
     Given I am on the "Home" page
 
-  Scenario: Browse site
-    When I visit the "Home" page
-    Then the menu item "Home" should be active
+  Scenario Outline: Browse site
+    When I visit the <Page> page
+    Then the menu item <Menu Item> should be active
 
+    Examples:
+      | Page               | Menu Item | 
+      | Home               | Home      | 
+      | Contact            | Contact   | 
+      | Kitchens           | Kitchens  | 
+      | Stormer Kitchens   | Kitchens  | 
+      | Hand Made Kitchens | Kitchens  | 

@@ -1,5 +1,6 @@
 class KitchensController < ApplicationController
   def index
+    @active_nav_item = 'Kitchens'
     klass = case params[:type]
             when 'Stormer' then StormerKitchen
             when 'HandMade' then HandMadeKitchen

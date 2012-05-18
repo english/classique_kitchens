@@ -1,5 +1,6 @@
 class ContactController < ApplicationController
   def new
+    @active_nav_item = 'Contact'
     @message = Message.new
   end
 
