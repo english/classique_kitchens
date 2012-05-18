@@ -4,6 +4,10 @@ class HandMadeKitchen < Kitchen
     "Hand Made Kitchen"
   end
 
+  def self.active_nav_item
+    "Hand Made Furniture"
+  end
+
   def self.description
     RDiscount.new(<<DESC).to_html
 From the rich dark hues of walnut and the light shades of maple to the warm

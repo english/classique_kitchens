@@ -33,6 +33,10 @@ class Kitchen < ActiveRecord::Base
     "All Kitchens"
   end
 
+  def self.active_nav_item
+    'Kitchens'
+  end
+
   def self.description
     RDiscount.new(<<DESC).to_html
 Our Kitchens are carefully selected from high quality branded European

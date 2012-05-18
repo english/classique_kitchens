@@ -12,9 +12,8 @@ Feature: Active Menu Item
     Then the menu item <Menu Item> should be active
 
     Examples:
-      | Page               | Menu Item | 
-      | Home               | Home      | 
-      | Contact            | Contact   | 
-      | Kitchens           | Kitchens  | 
-      | Stormer Kitchens   | Kitchens  | 
-      | Hand Made Kitchens | Kitchens  | 
+      | Page                | Menu Item           | 
+      | Home                | Home                | 
+      | Contact             | Contact             | 
+      | störmer küchen      | störmer küchen      | 
+      | Hand Made Furniture | Hand Made Furniture | 

@@ -1,6 +1,5 @@
 class KitchensController < ApplicationController
   def index
-    @active_nav_item = 'Kitchens'
     klass = case params[:type]
             when 'Stormer' then StormerKitchen
             when 'HandMade' then HandMadeKitchen
@@ -9,12 +8,12 @@ class KitchensController < ApplicationController
     @kitchens = klass.all
     @type = klass.type.pluralize
     @description = klass.description
+    @active_nav_item = klass.active_nav_item
   end
   attr_reader :kitchens, :type, :description
   helper_method :kitchens
   helper_method :type
   helper_method :description
-
 
   def new
     @kitchen = Kitchen.new

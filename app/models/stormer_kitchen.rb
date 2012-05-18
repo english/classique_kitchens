@@ -6,6 +6,10 @@ class StormerKitchen < Kitchen
     'störmer küchen'
   end
 
+  def self.active_nav_item
+    'störmer küchens'
+  end
+
   def self.description
     RDiscount.new(<<DESC).to_html
 Modern and timeless kitchens...

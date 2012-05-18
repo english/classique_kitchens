@@ -1,11 +1,11 @@
+# encoding: utf-8
+
 Given /^I am on the "(.*?)" page$/ do |page|
   path = case page
          when 'Home' then '/'
+         when 'störmer küchen' then '/kitchens?type=Stormer'
+         when 'Hand Made Furniture' then '/kitchens?type=HandMade'
          when 'Contact' then '/contact'
-         when 'Kitchens' then '/kitchens'
-         when 'Stormer Kitchens' then '/kitchens?type=Stormer'
-         when 'Hand Made Kitchens' then '/kitchens?type=HandMade'
-         else '/'
          end
 
   visit path
