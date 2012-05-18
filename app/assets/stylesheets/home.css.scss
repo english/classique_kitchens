@@ -13,10 +13,10 @@
 
   .blurb {
     @extend .top-left;
-    background-color: #000;
-    @include opacity(0.75);
+    background-color: #222;
+    @include opacity(0.80);
     color: #fff;
-    width: 25%;
+    width: 30%;
     height: 100%;
     padding: 0 15px;
 
