@@ -1,3 +1,6 @@
-$sansFontFamily: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sansFontFamily:            'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$burgundy:                  #880e12;
+$navbarBackground:          $burgundy;
+$navbarBackgroundHighlight: $navbarBackground;
 
 @import "bootstrap";
