@@ -9,7 +9,7 @@
           = link_to 'Edit', edit_kitchen_path(kitchen), :class => 'btn btn-mini' 
           = link_to 'Delete', kitchen, :class => 'btn btn-mini btn-danger'
 
-        %img.image{src: kitchen.image.url, alt: kitchen.name}
+        %img.image{src: kitchen.image.url(:main), alt: kitchen.name}
 
   .description
     .well= raw(description)

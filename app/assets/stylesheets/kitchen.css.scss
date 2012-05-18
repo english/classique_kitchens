@@ -15,11 +15,7 @@
       height: 405px;
     }
 
-    .image {
-      @extend .top-left;
-      width: 540px;
-      height: 405px;
-    }
+    .image { @extend .top-left; }
 
     .actions {
       z-index: 2;

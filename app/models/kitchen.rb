@@ -4,7 +4,7 @@ class Kitchen < ActiveRecord::Base
   validates :name, uniqueness: true
 
   has_attached_file :image, {
-    styles: { featured: '940x529#' },
+    styles: { featured: '940x529#', main: '540x405#' },
     url: '/system/kitchens/:attachment/:id/:basename_:style.:extension'
   }.merge(PAPERCLIP_STORAGE_OPTIONS)
 
