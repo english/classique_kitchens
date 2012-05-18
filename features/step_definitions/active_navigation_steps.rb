@@ -3,8 +3,8 @@
 Given /^I am on the "(.*?)" page$/ do |page|
   path = case page
          when 'Home' then '/'
-         when 'störmer küchen' then '/kitchens?type=Stormer'
-         when 'Hand Made Furniture' then '/kitchens?type=HandMade'
+         when 'störmer küchen' then '/stormer_kitchens'
+         when 'Hand Made Furniture' then '/hand_made_furniture'
          when 'Contact' then '/contact'
          end
 
