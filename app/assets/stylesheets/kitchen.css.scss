@@ -41,4 +41,13 @@
   .final-message {
     @include makeColumn(12);
   }
+
+  .column {
+    width: 50%;
+    float: left;
+  }
+  
+  .the-rest {
+    clear: both;
+  }
 }
