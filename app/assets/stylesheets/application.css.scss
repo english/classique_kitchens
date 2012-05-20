@@ -6,10 +6,5 @@
 @import "kitchen";
 @import "features";
 
-.content {
-  .title {
-    margin-bottom: 1em;
-  }
-}
-
+body { padding-bottom: 20px; }
 textarea { width: 400px; }
