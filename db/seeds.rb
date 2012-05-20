@@ -6,12 +6,12 @@ dir = File.expand_path('seed', File.dirname(__FILE__))
 
 Dir["#{dir}/stormer/*.jpg"].each do |image|
   name = "Stormer " + File.basename(image, '.jpg').humanize.titleize
-  StormerKitchen.create(name: name, image: File.new(image))
+  StormerKitchen.create!(name: name, image: File.new(image))
 end
 
 Dir["#{dir}/hand_made/*.jpg"].each do |image|
   name = "Hand Made " + File.basename(image, '.jpg').humanize.titleize
-  HandMadeKitchen.create(name: name, image: File.new(image))
+  HandMadeKitchen.create!(name: name, image: File.new(image))
 end
 
 StormerKitchen.first.update_attribute(:featured, true)
@@ -25,5 +25,5 @@ Dir["#{dir}/features/*.jpg"].each do |image_path|
   content = File.read(content_file)
   image = File.new(image_path)
 
-  Feature.create(content: content, image: image)
+  Feature.create!(content: content, image: image)
 end
