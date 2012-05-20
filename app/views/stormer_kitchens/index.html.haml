@@ -1,6 +1,14 @@
 .kitchens-index
   .page-header
     %h1= raw(type)
+
   = render 'kitchens/slideshow', locals: {kitchens: kitchens}
+
   .description
     .well= raw(description)
+
+  %ul.features
+    - features.each do |feature|
+      %li
+        =render feature
+    = link_to 'New feature', new_feature_path, :class => 'btn btn-mini'
