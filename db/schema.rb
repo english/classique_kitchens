@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120520082106) do
+ActiveRecord::Schema.define(:version => 20120520083536) do
 
   create_table "features", :force => true do |t|
     t.text     "content"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20120520082106) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.integer  "kitchen_id"
   end
 
   create_table "kitchens", :force => true do |t|

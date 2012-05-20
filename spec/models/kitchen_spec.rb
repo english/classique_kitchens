@@ -51,6 +51,7 @@ describe Kitchen do
 
   describe "#features" do
     let(:sample_content) { "__lorem__ _ipsum_" }
+    subject { Factory.create(:kitchen) }
 
     it "has features associated" do
       subject.features.create! image: sample_image, content: sample_content
