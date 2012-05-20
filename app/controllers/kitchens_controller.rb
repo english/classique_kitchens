@@ -1,4 +1,6 @@
 class KitchensController < ApplicationController
+  before_filter :authorise
+
   def new
     @kitchen = Kitchen.new
   end

@@ -10,6 +10,13 @@
           = link_to 'Hand Made Furniture', hand_made_furniture_path
         %li{:class => ('active' if active?('Contact'))}
           = link_to 'Contact', '/contact'
+
       %ul.nav.pull-right
-        %li
-          = link_to 'New User', new_user_path
+        - if current_user
+          %li
+            = link_to 'New User', new_user_path
+          %li
+            = link_to 'Log out', session_path('current'), method: :delete
+        - else
+          %li
+            = link_to 'Login', new_session_path

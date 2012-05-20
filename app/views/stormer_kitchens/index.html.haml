@@ -16,7 +16,8 @@
         - feature_row.each do |feature|
           %li.item
             =render feature
-    = link_to 'New feature', new_feature_path, :class => 'btn btn-mini'
+    - if current_user
+      = link_to 'New feature', new_feature_path, :class => 'btn btn-mini'
 
   .final-message
     .well

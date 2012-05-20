@@ -1,8 +1,9 @@
 #slideshow.kitchens
   - @kitchens.each do |kitchen|
     %div{:class => "kitchen #{kitchen.name.parameterize}"}
-      .actions
-        = link_to 'New Kitchen', new_kitchen_path, :class => 'btn btn-mini'
-        = link_to 'Edit', edit_kitchen_path(kitchen), :class => 'btn btn-mini' 
-        = link_to 'Delete', kitchen, :class => 'btn btn-mini btn-danger'
+      - if current_user
+        .actions
+          = link_to 'New Kitchen', new_kitchen_path, :class => 'btn btn-mini'
+          = link_to 'Edit', edit_kitchen_path(kitchen), :class => 'btn btn-mini' 
+          = link_to 'Delete', kitchen, :class => 'btn btn-mini btn-danger'
       %img.image{src: kitchen.image.url(:main), alt: kitchen.name}

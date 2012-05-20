@@ -1,4 +1,6 @@
 class FeaturesController < ApplicationController
+  before_filter :authorise
+
   def new
     @feature = Feature.new
   end

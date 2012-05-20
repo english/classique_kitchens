@@ -1,10 +1,10 @@
 ClassiqueKitchens::Application.routes.draw do
-  resources :users
-
   root to: 'page#home'
 
   resources :kitchens
   resources :features
+  resources :sessions
+  resources :users
 
   get 'contact' => 'contact#new'
   put 'contact' => 'contact#create'
