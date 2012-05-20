@@ -21,7 +21,7 @@ We will work with you to create a totally unique kitchen acquired to your
 personal taste. We perceive each individual project as an invitation to push
 our creative design skills to the limit, above all with new thinking.
 
-Our Kitchens are carefully selected from high quality branded European
+Our kitchens are carefully selected from high quality branded European
 suppliers, ensuring you the very latest in cutting edge design and innovation.
 Our portfolio of over 50 ranges include high gloss lacquers, carbon acrylic
 through to our bespoke handmade furniture.

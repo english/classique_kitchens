@@ -39,7 +39,7 @@ class Kitchen < ActiveRecord::Base
 
   def self.description
     RDiscount.new(<<DESC).to_html
-Our Kitchens are carefully selected from high quality branded European
+Our kitchens are carefully selected from high quality branded European
 suppliers, ensuring you the very latest in cutting edge design and innovation.
 Our portfolio of over 50 ranges include high gloss lacquers, carbon acrylic
 through to our bespoke handmade furniture.
