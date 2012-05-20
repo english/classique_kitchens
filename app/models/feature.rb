@@ -5,6 +5,6 @@ class Feature < ActiveRecord::Base
 
   # TODO: Put this in its place
   def content_html
-    RDiscount.new(self.content).to_html.strip
+    RDiscount.new(self.content).to_html.strip.encode('US-ASCII', invalid: :replace)
   end
 end
