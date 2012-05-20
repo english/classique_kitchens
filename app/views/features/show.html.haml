@@ -1,0 +1,7 @@
+= image_tag @feature.image.url
+= raw @feature.content_html
+
+.form-actions
+  = link_to 'Back', stormer_kitchens_path, :class => 'btn'
+  = link_to 'Edit', edit_feature_path(@feature), :class => 'btn'
+  = link_to 'Delete', feature_path(@feature), method: 'delete', confirm: 'Are you sure?', :class => 'btn btn-danger'
