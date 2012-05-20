@@ -48,14 +48,4 @@ describe Kitchen do
       subject.should_not be_valid
     end
   end
-
-  describe "#features" do
-    let(:sample_content) { "__lorem__ _ipsum_" }
-    subject { Factory.create(:kitchen) }
-
-    it "has features associated" do
-      subject.features.create! image: sample_image, content: sample_content
-      subject.features.count.should == 1
-    end
-  end
 end
