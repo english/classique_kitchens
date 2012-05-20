@@ -7,8 +7,13 @@
   .description
     .well= raw(description)
 
-  %ul.features
-    - features.each do |feature|
-      %li
-        =render feature
+  .features
+    .page-header
+      %h2 Quality Features
+
+    - features.each_slice(3) do |feature_row|
+      %ul.features-list
+        - feature_row.each do |feature|
+          %li.item
+            =render feature
     = link_to 'New feature', new_feature_path, :class => 'btn btn-mini'

@@ -3,7 +3,9 @@ ClassiqueKitchens::Application.routes.draw do
 
   resources :kitchens
   resources :features
-  resources :contact
+
+  get 'contact' => 'contact#new'
+  put 'contact' => 'contact#create'
 
   get 'stormer_kitchens'    => 'stormer_kitchens#index'
   get 'hand_made_furniture' => 'hand_made_furniture#index'

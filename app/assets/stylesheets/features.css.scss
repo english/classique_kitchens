@@ -1,0 +1,21 @@
+.features {
+  clear: both;
+  @include makeColumn(12);
+
+  .page-header { margin-left: 0; }
+}
+
+.features-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  @include makeRow;
+
+  .item { @include makeColumn(4); }
+  .first { clear: both; }
+  .feature { @extend .well; }
+  img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
