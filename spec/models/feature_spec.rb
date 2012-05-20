@@ -6,6 +6,6 @@ describe Feature do
 
   it "has content which is converted to markdown" do
     subject.content = "Lorem __ipsum__ dolor"
-    subject.content.should == 'Lorem <strong>ipsum<strong> dolor'
+    subject.content_html.should == 'Lorem <strong>ipsum<strong> dolor'
   end
 end

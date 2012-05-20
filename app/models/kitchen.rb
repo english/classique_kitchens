@@ -1,6 +1,4 @@
 class Kitchen < ActiveRecord::Base
-  has_many :features
-
   attr_accessible :name, :image, :type, :featured
   validates :name, presence: true
   validates :name, uniqueness: true
