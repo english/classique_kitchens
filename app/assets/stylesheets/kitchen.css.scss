@@ -37,4 +37,8 @@
     @include makeColumn(12);
     clear: both;
   }
+
+  .final-message {
+    @include makeColumn(12);
+  }
 }

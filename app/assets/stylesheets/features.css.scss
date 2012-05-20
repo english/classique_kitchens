@@ -1,6 +1,7 @@
 .features {
   clear: both;
   @include makeColumn(12);
+  margin-bottom: 15px;
 
   .page-header { margin-left: 0; }
 }
@@ -14,6 +15,7 @@
   .item { @include makeColumn(4); }
   .first { clear: both; }
   .feature { @extend .well; }
+
   img {
     display: block;
     margin: 0 auto 10px;
