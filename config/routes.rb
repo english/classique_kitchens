@@ -1,4 +1,6 @@
 ClassiqueKitchens::Application.routes.draw do
+  resources :users
+
   root to: 'page#home'
 
   resources :kitchens

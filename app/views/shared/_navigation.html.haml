@@ -2,7 +2,14 @@
   .navbar-inner
     .container
       %ul.nav
-        %li{:class => ('active' if active?('Home'))}= link_to 'Home', root_path
-        %li{:class => ('active' if active?('störmer küchens'))}= link_to 'störmer küchens', stormer_kitchens_path
-        %li{:class => ('active' if active?('Hand Made Furniture'))}= link_to 'Hand Made Furniture', hand_made_furniture_path
-        %li{:class => ('active' if active?('Contact'))}= link_to 'Contact', '/contact'
+        %li{:class => ('active' if active?('Home'))}
+          = link_to 'Home', root_path
+        %li{:class => ('active' if active?('störmer küchens'))}
+          = link_to 'störmer küchens', stormer_kitchens_path
+        %li{:class => ('active' if active?('Hand Made Furniture'))}
+          = link_to 'Hand Made Furniture', hand_made_furniture_path
+        %li{:class => ('active' if active?('Contact'))}
+          = link_to 'Contact', '/contact'
+      %ul.nav.pull-right
+        %li
+          = link_to 'New User', new_user_path

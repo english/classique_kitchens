@@ -1,0 +1,12 @@
+= simple_form_for(@user, html: { :class => 'form-horizontal' }) do |f|
+  %fieldset
+    %legend
+      = controller.action_name.capitalize
+      User
+
+    = f.input :email, value: @user.email, as: :email
+    = f.input :password, value: @user.password, as: :password
+    = f.input :password_confirmation, value: @user.password, as: :password
+
+    .form-actions
+      = f.submit nil, :class => 'btn btn-primary'

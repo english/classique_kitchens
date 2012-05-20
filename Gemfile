@@ -7,6 +7,7 @@ gem 'paperclip',  '~> 3.0.3'
 gem 'haml-rails', '~> 0.3.4'
 gem 'rdiscount'
 gem 'simple_form'
+gem 'bcrypt-ruby', '~> 3.0.1'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
