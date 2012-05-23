@@ -3,11 +3,11 @@
 class StormerKitchen < Kitchen
   # TODO: extract this into presenter/exhibit
   def self.type
-    'störmer küchen'
+    'Störmer Küchen'
   end
 
   def self.active_nav_item
-    'störmer küchens'
+    'Störmer Küchen'
   end
 
   def self.description
@@ -22,6 +22,16 @@ smallest of details.
 
 Read the [2012 störmer
 jounal](http://www.stoermer-kuechen.de/journal/index-gb.shtml#journal).
+
+Classique Kitchens ensures intelligent use of space. This means, no more
+awkward concerns. Creative storage solutions and a sophisticated range of
+interior fittings guarantee organisation with optimum use.
+
+Many of our ranges are built on a modular system enabling us to create your
+dream kitchen. The benefit of such systems is that we can really tailor your
+kitchen to suit you and your lifestyle. Effective LED lighting, personally
+designed by our lighting specialists will really emphasise the final finishing
+touch to your totally unique kitchen.
 DESC
   end
 

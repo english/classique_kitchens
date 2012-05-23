@@ -2,7 +2,7 @@
 class StormerKitchensController < ApplicationController
   def index
     @kitchens = StormerKitchen.all
-    @type = StormerKitchen.type.pluralize
+    @type = StormerKitchen.type
     @description = StormerKitchen.description
     @active_nav_item = 'störmer küchens'
     @features = Feature.all
