@@ -8,6 +8,8 @@ gem 'haml-rails', '~> 0.3.4'
 gem 'rdiscount'
 gem 'simple_form'
 gem 'bcrypt-ruby', '~> 3.0.1'
+gem 'capistrano'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
