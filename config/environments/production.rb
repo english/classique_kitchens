@@ -80,12 +80,9 @@ ClassiqueKitchens::Application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
+    address: "127.0.0.1",
+    port: 25,
     domain: "classiquekitchens.co.uk",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV["CLASSIQUE_GMAIL_USERNAME"],
-    password: ENV["CLASSIQUE_GMAIL_PASSWORD"]
+    enable_starttls_auto: false,
   }
 end
