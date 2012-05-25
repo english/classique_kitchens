@@ -1,7 +1,12 @@
 .kitchens-index {
   @include makeRow;
 
-  .page-header { @include makeColumn(12); }
+  .page-header {
+    @include makeColumn(12);
+    h1 {
+      font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    }
+  }
 
   .slider-container {
     @include makeRow;
@@ -42,10 +47,6 @@
   .new-kitchen {
     @include makeColumn(12);
     clear: both;
-  }
-
-  .stormer-logo {
-
   }
 
   .final-message {
