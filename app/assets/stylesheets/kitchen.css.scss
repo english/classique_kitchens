@@ -7,7 +7,6 @@
     height: 405px;
     position: relative;
     margin-bottom: 2em;
-    @include makeColumn(7);
 
     .kitchen {
       @extend .top-left;
@@ -25,6 +24,13 @@
     }
   }
 
+  .stormer-imagery {
+    @include makeRow;
+    @include makeColumn(7);
+  }
+
+  .stormer-logo { text-align: center; }
+
   .description {
     @include makeColumn(5);
     p {
@@ -36,6 +42,10 @@
   .new-kitchen {
     @include makeColumn(12);
     clear: both;
+  }
+
+  .stormer-logo {
+
   }
 
   .final-message {

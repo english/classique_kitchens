@@ -20,7 +20,7 @@ and the highest quality materials. Our desire is to design a kitchen which is
 perfect both aesthetically and functionally, with attention paid to the
 smallest of details.
 
-Read the [2012 störmer
+Read the [2012 Störmer
 jounal](http://www.stoermer-kuechen.de/journal/index-gb.shtml#journal).
 
 Classique Kitchens ensures intelligent use of space. This means, no more
