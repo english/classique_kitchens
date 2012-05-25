@@ -3,6 +3,11 @@
 
   .page-header { @include makeColumn(12); }
 
+  .slider-container {
+    @include makeRow;
+    @include makeColumn(7);
+  }
+
   .kitchens {
     height: 405px;
     position: relative;
@@ -22,11 +27,6 @@
       bottom: 6px;
       right: 6px;
     }
-  }
-
-  .stormer-imagery {
-    @include makeRow;
-    @include makeColumn(7);
   }
 
   .stormer-logo { text-align: center; }

@@ -1,7 +1,7 @@
 .kitchens-index
   .page-header
     %h1 Hand Made Furniture
-  = render 'kitchens/slideshow', locals: {kitchens: kitchens}
+  .slider-container= render 'kitchens/slideshow', locals: {kitchens: kitchens}
   .description
     .well= raw(description)
 
