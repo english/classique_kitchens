@@ -9,3 +9,18 @@
 body { padding-bottom: 20px; }
 textarea { width: 400px; }
 footer { margin-top: 15px; }
+
+.contact {
+  @include makeRow;
+  .title {
+    @extend legend;
+    font-weight: normal;
+  }
+  form {
+    @include makeColumn(6);
+    .control-label { width: 80px; }
+    .controls { margin-left: 100px; }
+  }
+  .map { @include makeColumn(6); }
+  textarea { width: 350px; }
+}
