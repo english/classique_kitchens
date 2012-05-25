@@ -1,6 +1,14 @@
 $sansFontFamily:            'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 $burgundy:                  #880e12;
+$gold:                      #FFD700;
+$white:                     #FFFFFF;
+
 $navbarBackground:          $burgundy;
 $navbarBackgroundHighlight: $navbarBackground;
+$navbarText:               	$white;
+$navbarLinkColor:           $white;
+$navbarLinkColorHover:      $gold;	
+$navbarLinkColorActive:     $navbarLinkColorHover;
 
 @import "bootstrap";
