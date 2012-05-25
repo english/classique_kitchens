@@ -21,6 +21,16 @@ footer { margin-top: 15px; }
     .control-label { width: 80px; }
     .controls { margin-left: 100px; }
   }
-  .map { @include makeColumn(6); }
   textarea { width: 350px; }
+}
+
+.map { @include makeColumn(6); }
+.opening-hours {
+  @include makeRow;
+  .content { @include makeColumn(6); }
+  .title {
+    @extend legend;
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
 }

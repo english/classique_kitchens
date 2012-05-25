@@ -1,3 +1,15 @@
+.opening-hours
+  .content
+    %h2.title Opening Times
+    %table.table.table-striped.table-bordered.table-condensed
+      %tbody
+        %tr
+          %td Monday to Friday
+          %td 9:30am til 2:30pm
+        %tr
+          %td Saturday
+          %td 10:00am til 5:00pm
+
 .contact
   = simple_form_for(@message, url: contact_path,
     html: { method: :put, :class => 'form-horizontal contact-form' }) do |f|
