@@ -15,5 +15,5 @@ Feature: Active Menu Item
       | Page                | Menu Item           | 
       | Home                | Home                | 
       | Contact             | Contact             | 
-      | störmer küchen      | störmer küchen      | 
+      | Störmer Küchen      | Störmer Küchen      | 
       | Hand Made Furniture | Hand Made Furniture | 
