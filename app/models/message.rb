@@ -3,7 +3,7 @@ class Message
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :email, :content
+  attr_accessor :name, :company, :email, :content
 
   validates_presence_of :name, :email, :content
   validates_length_of :content, maximum: 500

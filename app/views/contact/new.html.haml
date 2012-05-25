@@ -4,6 +4,7 @@
     %legend Contact Form
 
     = f.input :name, placeholder: 'John Smith'
+    = f.input :company, placeholder: 'Optional'
     = f.input :email, placeholder: 'someone@example.com'
     = f.input :content, placeholder: 'Your message here...', as: 'text',
       label: 'Message', input_html: { rows: '10', cols: '10', :class => 'message' }

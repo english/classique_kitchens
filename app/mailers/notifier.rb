@@ -1,5 +1,5 @@
 class Notifier < ActionMailer::Base
-  default from: "contact-form@classiquekitchens.co.uk"
+  default from: "notifications@classiquekitchens.co.uk"
   default to: "paul@classiquekitchens.co.uk"
 
   def new_message(message)
