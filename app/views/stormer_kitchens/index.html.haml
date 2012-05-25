@@ -2,7 +2,9 @@
   .page-header
     %h1= raw(type)
 
-  = render 'kitchens/slideshow', locals: {kitchens: kitchens}
+  .stormer-imagery
+    = render 'kitchens/slideshow', locals: {kitchens: kitchens}
+    .stormer-logo= image_tag 'stormer-logo.jpg'
 
   .description
     .well= raw(description)
