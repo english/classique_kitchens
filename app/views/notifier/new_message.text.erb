@@ -1,9 +1,9 @@
-Name:    <%= @message.name %>
+Name: <%= @message.name %>
 <% if @message.company -%>
-  Company: <%= @message.company %>
+Company: <%= @message.company %>
 <% end -%>
 <% if @message.date -%>
-  This customer would like an appointment at <%= @message.date.to_formatted_s(:short) %> 
+This customer would like an appointment at <%= @message.date.to_formatted_s(:short) %> 
 <% end -%>
-Email:   <%= @message.email %>
+Email: <%= @message.email %>
 Content: <%= @message.content %>
