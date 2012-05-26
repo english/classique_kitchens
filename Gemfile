@@ -18,6 +18,7 @@ group :assets do
   gem 'uglifier',     '>= 1.0.3'
   gem 'bootstrap-sass'
   gem 'compass-rails'
+  gem 'oily_png'
 end
 
 group :test, :development do

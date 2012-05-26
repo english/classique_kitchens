@@ -45,3 +45,12 @@ Then /^I should see the company address in the header:$/ do |address|
     page.should(have_content(address))
   end
 end
+
+Then /^I should see the following brand logos:$/ do |table|
+  within '.brands' do
+    table.raw.each do |row|
+      brand = row.first
+      page.should(have_content(brand))
+    end
+  end
+end

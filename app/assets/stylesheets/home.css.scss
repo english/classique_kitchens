@@ -27,3 +27,16 @@
     }
   }
 }
+.brand-list {
+  @include horizontal-list;
+  width: 108px * 7;
+  margin: 20px auto 0;
+}
+.brand {
+  width: 100px;
+  height: 75px;
+  @include hide-text;
+}
+
+@import "brand/*.png";
+@include all-brand-sprites;

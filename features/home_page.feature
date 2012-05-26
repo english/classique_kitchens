@@ -20,3 +20,15 @@ Feature: Home Page
     """
     Kitchens from Classique Kitchens are a reflection of
     """
+
+  Scenario: Customer visiting the home page sees brands stocked in the footer
+
+    When I go to the home page
+    Then I should see the following brand logos:
+      | Bosch  |
+      | Sensio |
+      | Kohler |
+      | Abode  |
+      | ARP    |
+      | Kaple  |
+      | Miele  |
