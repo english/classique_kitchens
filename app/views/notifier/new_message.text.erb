@@ -1,4 +1,6 @@
 Name:    <%= @message.name %>
-Company: <%= @message.company %>
+<% if @message.company -%>
+  Company: <%= @message.company %>
+<% end -%>
 Email:   <%= @message.email %>
 Content: <%= @message.content %>
