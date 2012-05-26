@@ -10,24 +10,25 @@ body { padding-bottom: 20px; }
 textarea { width: 400px; }
 footer { margin-top: 15px; }
 
-.contact {
-  @include makeRow;
+.map {
   .title {
     @extend legend;
     font-weight: normal;
   }
+}
+
+.contact {
   form {
-    @include makeColumn(6);
     .control-label { width: 80px; }
     .controls { margin-left: 100px; }
   }
   textarea { width: 350px; }
+  .input-small { width: 65px; }
 }
 
-.map { @include makeColumn(6); }
+.map, .opening-hours, .contact, .map { @include makeColumn(6); }
+
 .opening-hours {
-  @include makeRow;
-  .content { @include makeColumn(6); }
   .title {
     @extend legend;
     font-weight: normal;
