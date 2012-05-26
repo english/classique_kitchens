@@ -30,5 +30,5 @@ Feature: Home Page
       | Kohler |
       | Abode  |
       | ARP    |
-      | Kaple  |
+      | Caple  |
       | Miele  |
