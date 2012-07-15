@@ -10,7 +10,7 @@
 
 %body
   .container
-    %header.page-header
+    .header.page-header
       =render 'shared/navigation'
 
       .header-inner
@@ -19,7 +19,6 @@
             %h1.company-name Classique Kitchens
             %h2.subheading Personal - Individual - Inspirational
  
-
         .contact
           %p.address= "Visit us at our new kitchen studio: #{address}"
           %p.phone-number= "or call us on #{phone_number}."
@@ -31,7 +30,7 @@
           = msg
 
       = yield
-    %footer
+    .footer
       &copy;2012 Classique Kitchens
 
   :javascript
