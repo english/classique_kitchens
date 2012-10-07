@@ -1,6 +1,6 @@
 class Notifier < ActionMailer::Base
   default from: "notifications@classiquekitchens.co.uk"
-  default to: "jamienglish@gmail.com"
+  default to: "paul@classiquekitchens.co.uk"
 
   def new_message(message)
     @message = message
