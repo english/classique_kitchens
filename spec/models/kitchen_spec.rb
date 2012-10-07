@@ -21,7 +21,6 @@ describe Kitchen do
   describe :image do
     before { subject.image = sample_image }
     it { should have_attached_file(:image) }
-    it { should validate_attachment_presence(:image) }
 
     describe "image url" do
       it "should not include the model name in it" do

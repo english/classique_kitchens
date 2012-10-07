@@ -48,9 +48,8 @@ describe Notifier do
       body.should include(message.email)
       body.should include(message.content)
       body.should include('appointment')
-      body.should include('26 May 2012')
+      body.should include('26 May')
       body.should include('15:10')
-      puts body
     end
   end
 end
