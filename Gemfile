@@ -42,4 +42,5 @@ end
 group :production do
   gem 'pg'
   gem 'aws-sdk'
+  gem 'newrelic_rpm'
 end
