@@ -10,9 +10,8 @@ Feature: List kitchens of a particular type
       | Berlin   | Stormer   | 
       | Dublin   | Hand Made | 
 
-  @ignore
   Scenario: Go to kitchens -> Stormer Kitchens
-    When I click on the "Stormer Kitchens" link in the navbar
+    When I click on the "Störmer Küchens" link in the navbar
     Then I should see these kitchens
       | name     | type      | 
       | Salzburg | Stormer   | 
@@ -23,9 +22,8 @@ Feature: List kitchens of a particular type
       | London   | Hand Made | 
       | Dublin   | Hand Made | 
 
-  @ignore
   Scenario: Go to kitchens -> Hand Made Kitchens
-    When I click on the "Hand Made Kitchens" link in the navbar
+    When I click on the "Hand Made Furniture" link in the navbar
     Then I should see these kitchens
       | name     | type      | 
       | London   | Hand Made | 

@@ -13,7 +13,7 @@ When /^I go to the home page$/ do
 end
 
 Then /^I should see the company name and tagline in the header$/ do
-  within 'header' do
+  within '.header' do
     page.should have_content 'Classique Kitchens'
     page.should have_content 'Personal - Individual - Inspirational'
   end
@@ -35,13 +35,13 @@ Then /^I should see the following blurb about the company:$/ do |blurb|
 end
 
 Then /^I should see the company phone number in the header:$/ do |phone_number|
-  within 'header' do
+  within '.header' do
     page.should(have_content(phone_number))
   end
 end
 
 Then /^I should see the company address in the header:$/ do |address|
-  within 'header' do
+  within '.header' do
     page.should(have_content(address))
   end
 end

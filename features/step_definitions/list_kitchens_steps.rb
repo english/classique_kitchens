@@ -22,7 +22,7 @@ end
 Then /^I should see these kitchens$/ do |kitchens_table|
   kitchens_table.hashes.each do |kitchen_row|
     within '.kitchens' do
-      page.should have_content(kitchen_row['name'])
+      page.should have_selector "img[alt=#{kitchen_row['name']}]"
     end
   end
 end
@@ -30,7 +30,7 @@ end
 Then /^not these kitchens$/ do |kitchens_table|
   kitchens_table.hashes.each do |kitchen_row|
     within '.kitchens' do
-      page.should_not have_content(kitchen_row['name'])
+      page.should_not have_selector "img[alt=#{kitchen_row['name']}]"
     end
   end
 end
