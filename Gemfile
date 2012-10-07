@@ -1,9 +1,9 @@
 source :rubygems
 
-gem 'rails', '3.2.3'
+gem 'rails', '~> 3.2.3'
 
 gem 'jquery-rails'
-gem 'paperclip',  '~> 3.0.3'
+gem 'paperclip',  '~> 3.2.0'
 gem 'haml-rails', '~> 0.3.4'
 gem 'rdiscount'
 gem 'simple_form'
@@ -11,6 +11,7 @@ gem 'bcrypt-ruby', '~> 3.0.1'
 gem 'net-ssh', '~> 2.4.0'
 gem 'capistrano'
 gem 'unicorn'
+gem 'cocaine', '0.3.2'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
