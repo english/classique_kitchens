@@ -1,12 +1,17 @@
+@import "base";
+@import "bootstrap";
 @import "compass";
 @import "compass/css3";
-@import "base";
 @import "header";
 @import "home";
 @import "kitchen";
 @import "features";
 
-body { padding-bottom: 20px; }
+body {
+  padding-bottom: 20px;
+  font-size: 13px;
+}
+
 textarea { width: 400px; }
 .footer { margin-top: 15px; }
 
