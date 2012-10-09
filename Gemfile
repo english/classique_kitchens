@@ -10,7 +10,6 @@ gem 'simple_form'
 gem 'bcrypt-ruby', '~> 3.0.1'
 gem 'net-ssh', '~> 2.4.0'
 gem 'capistrano'
-gem 'unicorn'
 gem 'cocaine', '0.3.2'
 gem 'dalli'
 
