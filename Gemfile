@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'rails', '~> 3.2.3'
 
+gem 'thin'
 gem 'jquery-rails'
 gem 'paperclip',  '~> 3.2.0'
 gem 'haml-rails', '~> 0.3.4'
