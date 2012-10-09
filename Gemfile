@@ -39,7 +39,6 @@ group :test, :development do
   gem 'guard-cucumber'
   gem 'guard-rspec'
   gem 'guard-bundler'
-
   gem 'pry'
 end
 
