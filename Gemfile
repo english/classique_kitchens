@@ -14,6 +14,7 @@ gem 'capistrano'
 gem 'unicorn'
 gem 'cocaine', '0.3.2'
 gem 'dalli'
+gem 'foreman'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
