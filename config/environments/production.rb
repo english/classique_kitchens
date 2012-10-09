@@ -96,6 +96,4 @@ ClassiqueKitchens::Application.configure do
     :entitystore  => 'file:tmp/cache/rack/body',
     :allow_reload => false
   }
-
-  config.assets.initialize_on_precompile = false
 end

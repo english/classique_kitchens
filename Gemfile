@@ -2,7 +2,6 @@ source :rubygems
 
 gem 'rails', '~> 3.2.3'
 
-gem 'thin'
 gem 'jquery-rails'
 gem 'paperclip',  '~> 3.2.0'
 gem 'haml-rails', '~> 0.3.4'
@@ -14,8 +13,6 @@ gem 'capistrano'
 gem 'unicorn'
 gem 'cocaine', '0.3.2'
 gem 'dalli'
-
-gem 'foreman', group: :development
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
