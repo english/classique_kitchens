@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_filter :authorise
+  caches_action [:new]
 
   def new
     @user = User.new

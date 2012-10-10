@@ -1,5 +1,7 @@
 # encoding: utf-8
 class StormerKitchensController < ApplicationController
+  caches_action :index
+
   def index
     @kitchens = StormerKitchen.all
     @type = StormerKitchen.type

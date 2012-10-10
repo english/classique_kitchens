@@ -1,4 +1,6 @@
 class ContactController < ApplicationController
+  caches_action :new
+
   def new
     @active_nav_item = 'Contact'
     @message = Message.new

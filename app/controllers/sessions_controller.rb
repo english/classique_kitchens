@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   before_filter :authorise, only: [:destroy]
+  caches_action :new
 
   def new
   end
