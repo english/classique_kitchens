@@ -9,4 +9,4 @@ var kitchenSlideshow = function() {
 }
 
 $(document).ready(kitchenSlideshow)
-$(window).bind('page:change', kitchenSlideshow)
+$(window).bind('page:load', kitchenSlideshow)
