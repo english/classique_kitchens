@@ -11,4 +11,4 @@ var showHideAppointment = function() {
 };
 
 $(document).ready(showHideAppointment)
-$(window).bind('page:load', showHideAppointment)
+$(window).bind('page:fetch', showHideAppointment)

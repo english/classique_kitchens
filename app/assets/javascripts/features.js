@@ -14,4 +14,4 @@ var equalFeatureHeight = function() {
 };
 
 $(window).load(equalFeatureHeight);
-$(window).bind('page:load', equalFeatureHeight)
+$(window).bind('page:fetch', equalFeatureHeight)
