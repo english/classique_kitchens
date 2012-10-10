@@ -12,6 +12,7 @@ gem 'net-ssh', '~> 2.4.0'
 gem 'capistrano'
 gem 'cocaine', '0.3.2'
 gem 'dalli'
+gem 'thin'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
