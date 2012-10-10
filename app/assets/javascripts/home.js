@@ -9,4 +9,3 @@ var homeSlideshow = function() {
 };
 
 $(document).ready(homeSlideshow)
-$(window).bind('page:fetch', homeSlideshow)
