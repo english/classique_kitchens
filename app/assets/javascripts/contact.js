@@ -1,4 +1,4 @@
-$(function() {
+var showHideAppointment = function() {
   $("#appointment-date").hide();
 
   $('#message_appointment').click(function() {
@@ -8,4 +8,7 @@ $(function() {
       $("#appointment-date").hide();
     }
   });
-});
+};
+
+$(document).ready(showHideAppointment)
+$(window).bind('page:change', showHideAppointment)

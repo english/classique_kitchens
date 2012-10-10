@@ -1,4 +1,4 @@
-$(window).load(function() {
+var equalFeatureHeight = function() {
   $('.features-list').each(function() {
     var currentTallest = 0;
 
@@ -11,4 +11,7 @@ $(window).load(function() {
 
     $(this).find('.feature').css({'min-height': currentTallest});
   });
-});
+};
+
+$(window).load(equalFeatureHeight);
+$(window).bind('page:change', equalFeatureHeight)
