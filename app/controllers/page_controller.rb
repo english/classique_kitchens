@@ -1,8 +1,6 @@
 require 'ostruct'
 
 class PageController < ApplicationController
-  caches_action :home
-
   def home
     @active_nav_item = 'Home'
     @title = 'Classique Kitchens | Kitchens and Appliances Cumbria'

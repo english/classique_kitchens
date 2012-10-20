@@ -1,6 +1,4 @@
 class HandMadeFurnitureController < ApplicationController
-  caches_action :index
-
   def index
     @kitchens        = HandMadeKitchen.all
     @type            = HandMadeKitchen.type.pluralize
