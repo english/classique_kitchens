@@ -10,4 +10,5 @@ var showHideAppointment = function() {
   });
 };
 
-$(document).ready(showHideAppointment)
+$(document).ready(showHideAppointment);
+$(window).bind('page:change', showHideAppointment);

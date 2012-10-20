@@ -8,4 +8,5 @@ var homeSlideshow = function() {
   }, 5000);
 };
 
-$(document).ready(homeSlideshow)
+$(document).ready(homeSlideshow);
+$(window).bind('page:change', homeSlideshow);

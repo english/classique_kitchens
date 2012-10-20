@@ -13,4 +13,5 @@ var equalFeatureHeight = function() {
   });
 };
 
-$(window).load(equalFeatureHeight);
+$(document).ready(equalFeatureHeight);
+$(window).bind('page:change', equalFeatureHeight);

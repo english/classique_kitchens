@@ -8,4 +8,5 @@ var kitchenSlideshow = function() {
   }, 5000);
 }
 
-$(document).ready(kitchenSlideshow)
+$(document).ready(kitchenSlideshow);
+$(window).bind('page:change', kitchenSlideshow);
