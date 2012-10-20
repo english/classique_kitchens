@@ -11,7 +11,7 @@
         %li{:class => ('active' if active?('Contact'))}
           = link_to 'Contact', '/contact'
 
-      %ul.nav.pull-right
+      %ul.nav.pull-right{'data-no-turbolink' => true}
         - if current_user
           %li
             = link_to 'New User', new_user_path
