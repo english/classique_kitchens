@@ -1,4 +1,4 @@
-var homeSlideshow = function() {
+$(function() {
   $('#featured img:gt(0)').hide();
 
   setInterval(function() {
@@ -6,7 +6,4 @@ var homeSlideshow = function() {
       .next('img').fadeIn(1000)
       .end().appendTo('#featured .kitchens');
   }, 5000);
-};
-
-$(document).ready(homeSlideshow);
-$(window).bind('page:change', homeSlideshow);
+});

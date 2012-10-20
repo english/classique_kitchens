@@ -12,7 +12,6 @@ gem 'net-ssh', '~> 2.4.0'
 gem 'capistrano'
 gem 'cocaine', '0.3.2'
 gem 'dalli'
-gem 'turbolinks'
 
 gem 'thin'
 gem 'foreman', group: :development
