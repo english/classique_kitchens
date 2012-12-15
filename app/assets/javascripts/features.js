@@ -1,4 +1,4 @@
-$(function() {
+$(window).load(function() {
   $('.features-list').each(function() {
     var currentTallest = 0;
 
